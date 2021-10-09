@@ -151,7 +151,7 @@ getFAQ = async () => {
         let options = {
             method: 'get',
             isFile: true,
-            file: 'faq.list.json',
+            file: './faq.list.json',
             storage: 'faq'
         }
 
