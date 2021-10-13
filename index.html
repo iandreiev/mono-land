@@ -1,67 +1,1026 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Главная</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="format-detection" content="address=no">
-    <link rel="stylesheet" href="libs.min.css">
-    <link rel="stylesheet" href="index.min.css">
-  </head>
-  <body>
-    <div class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <title>Главная</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <link rel="stylesheet" href="libs.min.css">
+  <link rel="stylesheet" href="index.min.css">
+</head>
+
+<body>
+  <div class="page">
 
 
-<header class="header">
-  <div class="header__wrap">
-    <div class="header__list">
-      <div class="header__fold">
-        <ul class="header__menu">
-          <li class="header__logo">
-            <a href="index.html">
-              <picture>
-                <source srcset="img/logo.svg" media="(max-width: 767px)">
-                <img src="img/logo_color.svg" alt="">
-              </picture>
-            </a>
-          </li>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__list">
+          <div class="header__fold">
+            <ul class="header__menu">
+              <li class="header__logo">
+                <a href="index.html">
+                  <picture>
+                    <source srcset="img/logo.svg" media="(max-width: 767px)">
+                    <img src="img/logo_color.svg" alt="">
+                  </picture>
+                </a>
+              </li>
 
-          <li class="header__toggle">
-            <button class="header__open" type="button">
+              <li class="header__toggle">
+                <button class="header__open" type="button">
+                  <svg width="32" height="32">
+                    <use href="img/sprite.svg#menu"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li>
+                <button class="btn  btn--yellow  js-modal-open" type="button"
+                  onclick="passRouter('https://app.monopolylife.ru/')">Играть</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__collapse" data-scroll-lock-scrollable>
+            <button class="header__close" type="button">
               <svg width="32" height="32">
-                <use href="img/sprite.svg#menu"></use>
+                <use href="img/sprite.svg#cross-white"></use>
               </svg>
             </button>
-          </li>
 
-          <li>
-            <button class="btn  btn--yellow  js-modal-open" type="button" onclick="passRouter('https://app.monopolylife.ru/')">Играть</button>
-          </li>
-        </ul>
+            <nav class="header__nav">
+              <ul class="header__menu  header__menu--collapse">
+                <li><a href="#promo">Monopoly life</a></li>
+                <li><a href="#project">Наши проекты</a></li>
+                <li><a href="#video">Как это работает?</a></li>
+                <li><a href="#faq">О площадке</a></li>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#why-project">Почему стоит поучаствовать?</a></li>
+              </ul>
+
+              <div class="header__social">
+                <p>Мы в социальных сетях:</p>
+
+                <ul class="social">
+                  <li>
+                    <a href="#" target="_blank">
+                      <svg width="11" height="24">
+                        <use href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/MonopolyLife_RUS" target="_blank">
+                      <svg width="28" height="24">
+                        <use href="img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/monopolylife.ru?utm_medium=copy_link" target="_blank">
+                      <svg width="24" height="24">
+                        <use href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UC-9c_nnHDZAflOquOjiGcKw" target="_blank">
+                      <svg width="34" height="24">
+                        <use href="img/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section id="promo" class="scene  scene--large  promo">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="swiper-container  promo__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide  promo__slide">
+                  <div class="promo__item">
+                    <div class="promo__content">
+                      <div class="promo__title">
+                        <h1>Общая концепция игры <span class="nowrap">Monopoly Life</span></h1>
+                      </div>
+
+                      <div class="promo__text">
+                        <p>Площадка для реального бизнеса «Monopoly Life», предлагает каждому желающему, стать
+                          совладельцем действующего бизнеса и получать пассивный доход.</p>
+
+                        <p>Для участия в игре не требуются специальные знания, ни опыта ведения бизнеса, ни больших
+                          вложений!</p>
+
+                        <p>Увеличь свой доход играючи!</p>
+                      </div>
+                    </div>
+
+                    <div class="promo__accent">
+                      <div class="promo__frame  promo__frame--custom">
+                        <img src="img/a1.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide  promo__slide">
+                  <div class="promo__item">
+                    <div class="promo__content">
+                      <div class="promo__title">
+                        <h2>Коллективные инвестиции с <span class="nowrap">Monopoly Life</span></h2>
+                      </div>
+
+                      <div class="promo__text">
+                        <p>Принцип такого инвестирования позволяет уменьшить ваши риски, теперь для того что бы
+                          попробовать, не нужно выкупать бизнес целиком, достаточно купить минимальный кусочек. Такой
+                          подход, делает участия людей в бизнесе с небольшим капиталом доступным.</p>
+
+                        <p>Для совсем мелких участников мы разработали формат игры, а для крупных инвесторов доступны
+                          варианты участия в проектах с юридическим оформлением через кооператив.</p>
+                      </div>
+                    </div>
+
+                    <div class="promo__accent">
+                      <div class="promo__frame">
+                        <img src="img/a2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide  promo__slide">
+                  <div class="promo__item">
+                    <div class="promo__content">
+                      <div class="promo__title">
+                        <h2>Биржа <span class="nowrap">Monopoly Life</span></h2>
+                      </div>
+
+                      <div class="promo__text">
+                        <p>Всё можно купить и продать! Как и любая другая биржа мы создаем ее для того, чтобы наши
+                          игроки и инвесторы могли продавать, покупать и обмениваться долями на внутреннем рынке
+                          площадки, что бы в конечном итоге заработать или выкупить понравившийся бизнес целиком.</p>
+
+                        <p>Определяя стратегию торговли, Вы управляете стратегией в игре!</p>
+
+                        <p>Покупать или продавать – решать только Вам!</p>
+                      </div>
+                    </div>
+
+                    <div class="promo__accent">
+                      <div class="promo__frame">
+                        <img src="img/a3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev  promo__prev"></div>
+              <div class="swiper-button-next  promo__next"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo__scroll">
+          <span>Scroll</span>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="project" class="scene  scene--large  project">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="scene__title">
+              <h2>Наши проекты</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--triple" id="loadContent">
+
+        </div>
+
+        <div class="grid">
+          <div class="grid__item">
+            <div class="project__action">
+              <button onclick="window.open('https://app.monopolylife.ru/projects')" class="btn  btn--transparent">Все
+                проекты</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="scene  scene--large  video">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="scene__title">
+              <h2>Как это работает?</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item">
+            <div class="video__frame">
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/5IKPxffsmEo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="scene  scene--large  faq">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="faq__title">
+              <h2>О площадке</h2>
+            </div>
+
+            <div class="faq__subtitle">
+              <p>«Площадка для реального бизнеса «Monopoly Life», предлагает каждому желающему стать совладельцем
+                действующего бизнеса и получать пассивный доход.</p>
+            </div>
+          </div>
+
+          <div class="grid__item">
+            <div class="faq__image">
+              <img src="img/pole.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item">
+            <div class="faq__content">
+              <p>За подробностями о том, как подбирается бизнес, как можно увеличить свой доход, что будет если
+                приобрести золотую или платиновую фишку, вы можете найти <span class="link  js-modal-open"
+                  data-target="#modal-faq">здесь</span>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="scene  scene--large  features">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="scene__title  features__title">
+              <h2>Преимущества</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item  features__main">
+            <div class="swiper-container  features__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="features__content">
+                    <div class="features__subtitle">
+                      <p>для игрока</p>
+                    </div>
+
+                    <div class="features__promo">
+                      <img src="img/Investor.svg" alt="">
+                    </div>
+
+                    <div class="features__text">
+                      <ul class="features__list">
+                        <li>
+                          <div class="features__image">
+                            <img src="img/features_1.svg" width="80" height="80" alt="">
+                          </div>
+
+                          <div class="features__desc">
+                            Пассивный доход, мобильность
+                          </div>
+                        </li>
+                        <li>
+                          <div class="features__image">
+                            <img src="img/features_2.svg" width="80" height="80" alt="">
+                          </div>
+
+                          <div class="features__desc">
+                            Возможность стать директором
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide  features__slide">
+                  <div class="features__content">
+                    <div class="features__subtitle">
+                      <p>для выставившего бизнес на площадку</p>
+                    </div>
+
+                    <div class="features__promo">
+                      <img src="img/Company.svg" alt="">
+                    </div>
+
+                    <div class="features__text">
+                      <ul class="features__list">
+                        <li>
+                          <div class="features__image">
+                            <img src="img/features_3.svg" width="80" height="80" alt="">
+                          </div>
+
+                          <div class="features__desc">
+                            Пассивный доход, мобильность
+                          </div>
+                        </li>
+                        <li>
+                          <div class="features__image">
+                            <img src="img/features_4.svg" width="80" height="80" alt="">
+                          </div>
+
+                          <div class="features__desc">
+                            Возможность стать директором
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev  features__prev  js-features-button"></div>
+              <div class="swiper-button-next  features__next  js-features-button"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-project" class="scene  scene--large  why-project">
+        <div class="grid">
+          <div class="grid__item">
+            <div class="scene__title">
+              <h2>Почему стоит поучаствовать в проекте?</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item">
+            <div class="why-project__steps">
+              <div class="why-project__pacman">
+                <img src="img/pacman.svg" width="418" height="430" alt="">
+              </div>
+
+              <div class="why-project__content">
+                <div class="swiper-container  why-project__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="why-project__coins  why-project__coins--first">
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="why-project__desc">
+                          <div class="round">
+                            <img src="img/coin.svg" alt="">
+                          </div>
+
+                          <p class="round__text">Доступно <br> для каждого</p>
+                        </li>
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xl">
+                          <div class="round  round--small"></div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <ul class="why-project__coins">
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xs">
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="why-project__desc">
+                          <div class="round">
+                            <img src="img/coin.svg" alt="">
+                          </div>
+
+                          <p class="round__text">Безграничный рост прибыли</p>
+                        </li>
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xl">
+                          <div class="round  round--small"></div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <ul class="why-project__coins">
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xs">
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="why-project__desc">
+                          <div class="round">
+                            <img src="img/coin.svg" alt="">
+                          </div>
+
+                          <p class="round__text">Пассивный <br> доход</p>
+                        </li>
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xl">
+                          <div class="round  round--small"></div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <ul class="why-project__coins">
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xs">
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="why-project__desc">
+                          <div class="round">
+                            <img src="img/coin.svg" alt="">
+                          </div>
+
+                          <p class="round__text">Не требует <br> специальных <br> знаний</p>
+                        </li>
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xl">
+                          <div class="round  round--small"></div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <ul class="why-project__coins">
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xs">
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="why-project__desc">
+                          <div class="round">
+                            <img src="img/coin.svg" alt="">
+                          </div>
+
+                          <p class="round__text">Возможность <br> стать владельцем <br> бизнеса</p>
+                        </li>
+                        <li>
+                          <div class="round  round--small"></div>
+                        </li>
+                        <li class="hidden-xl">
+                          <div class="round  round--small"></div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="swiper-slide  js-target-slider"></div>
+
+                    <div class="swiper-slide"></div>
+                  </div>
+
+                  <div class="swiper-button-next  why-project__next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="grid__item">
+            <div class="project__action">
+              <button class="btn  js-modal-open" onclick="passRouter('https://app.monopolylife.ru/')">Теперь я готов
+                играть</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal-faq" class="modal  modal--full" data-scroll-lock-scrollable>
+        <div class="modal__overlay"></div>
+
+        <div class="modal__window">
+          <div class="modal__close">
+            <button class="js-modal-close" aria-label="Закрыть" type="button">
+              <svg width="32" height="32">
+                <use href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="modal__content">
+            <section class="scene  faq-info">
+
+              <div class="grid">
+                <div class="grid__item">
+                  <div class="faq-info__title">
+                    <h2>Ответы на вопросы</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="grid  faq-info__main">
+                <div class="grid__item">
+                  <div class="faq-info__list" id="loadFaq">
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-0">
+                        <div class="faq-info__question">
+                          <h3>Миссия проекта</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-0">
+                        <div class="faq-info__text">
+                          <p dir="ltr"><span>Все мы хотим хорошо зарабатывать, прикладывая при этом минимум усилий, жить
+                              на проценты, &nbsp;вложить и получать дивиденды от своих
+                              вложений.</span><span><br></span><span>Все мы прекрасно понимаем для того, что бы, что то
+                              заработать нужно, что то вложить. Что посеешь то и пожмешь.</span></p>
+                          <p dir="ltr"><span>Чтобы создать собственный или купить уже готовый бизнес, требуются
+                              значительные средства, эта задача многим не под силу в одиночку по ряду
+                              причин:&nbsp;</span></p>
+                          <p><br></p>
+                          <ul>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Не хватает денег;</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Нету времени;</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Отсутствие опыта управлять бизнесом;&nbsp;</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Страх потерять деньги и погореть;</span></p>
+                            </li>
+                          </ul>
+                          <p dir="ltr"><span><br></span><span>Миссия нашего проекта заключается в том, что
+                              бы:&nbsp;</span></p>
+                          <ul>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>дать людям возможность в игровом, образовательном формате попробовать
+                                  себя в качестве инвестора, принимать участие в торгах, покупать и продавать доли в
+                                  реальных и действующих бизнесах.&nbsp;</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Дать возможность людям с любым уровнем дохода и студенту и домохозяйке
+                                  или бизнесмену стать совладельцами в различных проектах в реальном сегменте.</span>
+                              </p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Без всяких кредитов, по мере возможность скупать доли других
+                                  участников, постепенно наращивая свой инвестиционный потенциал и увеличивать свой
+                                  пассивный доход.</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Начать с минимальных денег строить свою личную инмерию и формировать
+                                  источник пассивного дохода.</span></p>
+                            </li>
+                            <li aria-level="1" dir="ltr">
+                              <p dir="ltr"><span>Возможность выкупить бизнес целиком и стать &nbsp;100% владельцем
+                                  бизнеса.</span></p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-1">
+                        <div class="faq-info__question">
+                          <h3>Суть проекта Monopoly Life</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-1">
+                        <div class="faq-info__text">
+                          <p>Monopoly Life – это инвестиционная площадка, доступная в России и за ее пределами, интегрированная с реальным бизнесе и принципе коллективного инвестирования. Регистрируясь на площадке, вы получаете доступ к функционалу личного кабинета, в котором будут доступны инструменты для покупки и продажи долей в бизнесах, выставленных на площадке (сайте) проекта. <br>
+                            Monopoly Life позволяет разделить стоимость объекта между игроками. А какую долю выбрать решает сам игрок, просто выбрав нужнее число в карточке проекта.<br>
+                            Monopoly Life выполняет сложные и рутинные задачи вместо вас:<br>
+                            Мониторинг рынка готовых бизнесов и объектов недвижимости;<br>
+                            Анализ бизнес проектов в определенном ценовом сегменте малого и среднего бизнеса;<br>
+                            Отбор оптимальных бизнес проектов, как объектов для совместного инвестирования с целью сбережения, накопления и приумножени.<br>
+                            Формирование пула участников для коллективного выкупа объекты недвижимости или бизнеса.<br>
+                            Приобретение бизнеса, юридическое сопровождение.<br>
+                            Управление бизнеса на плечах управляющей компании и ежемесячные отчеты в личном кабинете!<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-2">
+                        <div class="faq-info__question">
+                          <h3>Выбор объектов</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-2">
+                        <div class="faq-info__text">
+                          <p>На площадке MonopolyLife размещаются только реальные объекты, готовые и действующие бизнесы, объекты недвижимости, магазины, предприятия, торговые и бизнес центры, все что работает и приносит доход.<br>
+                            На площадке проекта каждый желающий сможет подобрать бизнес себе по интересам.<br>
+                            Мы ищем перспективные, доходные бизнесы по всему миру, проверяем, проводим аудит и только те прокты которые соответствуют требованиям площадки размещаются на площадке Monoploylife. <br>
+                            Если у тебя есть крутой, действующий бизнес, который ты хочешь продать или привлечь инвестиции ты можешь разместить свой проект на площадке проекта. Для этого нужно обратиься в компанию и предоставить информацию по своему проекту.<br>
+                            Наша площадка может быть интересна тем, кто:<br>
+                            * Хочет продать существующий бизнес: недвижимость, магазины, заводы, любые другие предприятия, все что приносит доход и имеет перспективы развития.<br>
+                            * Те, кто хотят привлечь инвестиции в свой бизнес, через продажу части доли, но остаться им управлять.<br>
+                            * Те, у кого уже есть готовый, отлаженный бизнес и кто готов его масштабировать привлекая новых партнеров или продать франшизу.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-2">
+                        <div class="faq-info__question">
+                          <h3>Как стать участником</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-2">
+                        <div class="faq-info__text">
+                          <p>Для того что стать участником, сперва нужно пройти Регистрацию на площадке, затем нужно ознакомиться с перечнем объектов размещенных на площадке, в разделе «проекты» и выбрать подходящий для вас бизнес.<br>
+                            После этого при оформлении покупке нужно указать желаемое количество долей, согласиться с публичной офератой, внимательно ознакомиться с публичными документами в часности, с Предупреждением о Рисках.<br>
+                            Далее осуществить оплату, любым доступным методом, через личный кабинет пользователя.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-3">
+                        <div class="faq-info__question">
+                          <h3>Покупка доли</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-3">
+                        <div class="faq-info__text">
+                          <p>Преобрести доли вы можете на нескольких этапах.
+                            На первом этапе при первичном размещении бизнеса на площадке. То есть когда идет сбор средств на первичный выкуп бизнеса.<br>
+                            На этом этапе можно приобрести доли в бизнесе по самой выгодной цене.<br>
+                            После того как необходимая сумма собрана и бизнес выкуплен, некоторые участники начинают продавать свои доли на вторичном рынке, через внутреннюю биржу.<br>
+                            На этом этапе участники могут спекулировать продавая доли дороже, чем купили при первичном выкупе.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-4">
+                        <div class="faq-info__question">
+                          <h3>С какой суммы начать?</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-4">
+                        <div class="faq-info__text">
+                          <p>Минимальная сумма, с которой Вы можете начать 10 000 р., но с такой инвестиции вы много не заработаете, это по большей части пробный шар, чтобы ознакомиться с сервисами компаниями и принципом работы. При желании Вы можете наращивать свой капитал, инвестируя дополнительные средства.<br>
+                            Рекомендуемая сумма инвестирования от 100 000р. и выше, при таком вложении Ваша прибыль будет более заметной.<br>
+                            Чем больше будет ваша доля в капитале проекта, тем больший процент прибыли Вы будете получать от прибыли бизнеса.<br>
+                            Вы так же можете воспользоваться Калькулятором доходности, который поможет Вам рассчитать оптимальную сумму инвестирования в конкретный проекта.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-5">
+                        <div class="faq-info__question">
+                          <h3>Раунды</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-5">
+                        <div class="faq-info__text">
+                          <p>Процесс продажи долей при первичном размещении разделен на 3 этапа, которые называются раундами.<br>
+                            Раунд №1 называется раундом закрытых продаж.<br>
+                            Особенность этого раунда заключается в следующем, каждый зарегистрированный в системе пользователь может предложить свою цену за определенное количество долей по конкретной цене, на этом этапе можно выкупить максимальное количество долей с минимальной наценкой. Информация при закрытых торгах не разглашается, поэтому никто не знает кто предложил более выгодные условия.<br>  Доля будет продана тому, кто предложит самую выгодную цену.<br>
+                            Может сложиться такая ситуация что объект будет выкуплен полностью на раунде  закрытых продаж, не дойдя до раунда публичных продаж.<br>
+                            Чем выше раунд, тем стоимость доли повышается и условия становятся более жесткими. <br>
+                            Тот кто успел выкупить доли на более ранних раундах получает самую вкусную цену и собирает в дальнейшем все сливки.<br>
+                            
+                            Раунд №2.  Этот  раунд называется раунд Предварительных продаж, в рамках которого продается ограниченное количество долей, с хорошей скидкой. На этом этапе уже определена и зафиксирована стоимость минимальной доли в проекте. На этом этапе<br>
+                             могут покупать пользователи не ниже ЖЕЛТОЙ ФИШКИ. ???<br>
+                            Для поднятия интереса, иногда могут проходить дополнительные акции со скидками на крупные лоты.<br>
+                            Раунд №3.  Это раунд публичных продаж на котором размещаются не проданные доли в первых двух раунда. На данном этапе, каждый желающий может приобрести нужное ему количество долей, которое осталось в обращении.<br>
+                            Правило!<br>
+                            До момента окончания всех раундов, участники которые купили доли на первом и втором раунде не могут выставлять свои доли на продаже через биржу.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-7">
+                        <div class="faq-info__question">
+                          <h3>Доходность</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-7">
+                        <div class="faq-info__text">
+                          <p>Каждый проект имеет собственный показатель Доходности.
+                            На доходность проекта влияет множество факторов, как коньюнктура рынка, сезонный спрос на определенную группу товаров или услуг, конкурентная среда, политическая обстановка и многое другое.<br>
+                            Если проект показал отличный результат и высокую доходность в предыдущем периоде, это не является гарантией того, что в следующие периоды уровень доходности будет сохраняться на том же высоком уровне, и наоборот.<br>
+                            Заявленные показатели ожидаемой доходности не являются гарантированными!<br>
+                            Показатель доходности прогнозируется статистически на основе данных за предыдущие отчетные периоды.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-8">
+                        <div class="faq-info__question">
+                          <h3>Гарантии и риски</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-8">
+                        <div class="faq-info__text">
+                          <p>Наш опыт и стремление нацелены на подбор максимально качественных проектов в реальном сегменте, обладающих инвестиционным потенциалом и положительной динамикой доходности.<br>
+                            Объекты представленные на площадке MonopolyLife реально существуют, имеют реальные адреса, которые можно посетить и убедиться в аочаю.<br>
+                            Приобретая готовые, действующие бизнесы в реальном сегменте мы оптимизируем риски, так как то, что уже настроено, работает и приносит доход всегда понятнее и безопаснее, чем проекты, которые создаются с нуля.<br>
+                            
+                            
+                            Мы не гарантируем никакой доходности для пользователей, которые покупают доли в бизнесах.
+                            Размер прибыли может меняться в зависимости от специфики бизнеса, от динамики рынка, сезонных факторов и прочих обстоятельств.<br>
+                            Информация, публикуемая на площадке (сайте)- это статистические данные о доходности каждого бизнеса, основанные на финансовых показателях за предыдущие отчетные периоды работы. <br>
+                            
+                            Несмотря на все предосторожности с каждой стороны, всегда существуют риски связанные с обстоятельствами не преодолимой силы, которые нельзя предвидеть или избежать, такие как войны, эпидемии, гражданские волнения, блокады, эмбарго, землетрясения, наводнения, пожары, мировые кризисы, и другие стихийные бедствия.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-9">
+                        <div class="faq-info__question">
+                          <h3>Как оформляется</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-9">
+                        <div class="faq-info__text">
+                          <p>Каждый пользователь, который регистрируется в на площадке MonoployLIfe соглашается с договором оферты и правилами площадки.<br>
+
+                            Регистрируясь на площадке, вы получаете доступ к ресурсам и образовательным  материалам, у вас будет возможность в формате игры освоить принципы инвестирования, научиться анализировать финансовые показатели, планировать стретегию развития того или иного бизнеса, оценивать степень риска инвестиций, получить практические навыки биржевой торговли.<br>
+                            
+                            Покупая долю в одном из бизнесов, размещенных на сайте площадки, вы приобретаете виртуальную долю, которая закрепляется за вашей учетной записью в личном кабинете и принадлежить только вам.<br>
+                            
+                            Виртуальная доля является цифровой лицензией, выдаваемой площадкой, которая дает право ее владельцу на получение части от прибыли бизнеса, эквивалентной размеру самой доли.<br>
+                            
+                            Каждая  виртуальная доля привязана к натуральной доле в конкретном бизнесе и является равнозначной.<br>
+                            Каждая доля,  закрепляется  за пользователем в его личном кабинете на основании договора оферты.<br>
+                            
+                            Таким образом, каждый участник, обладающий виртуальной долей, получает право на получение части от прибыли бизнеса эквивалентной совокупному размеру долей в бизнесе.  <br>
+                            
+                            При покупке или продажи виртуальной доли через биржу проекта MonopolyLife, право владения цифровой лицензией переписывается с учетной записи одного пользователя, на учетную запись другого пользователя.<br>
+                            Право получения прибыли от бинеса в части % так же переходит новому владельцу цифровой лицензии.<br>
+                            
+                            И ПОМНИТЕ!<br>
+                            Покупая доли в различных бизнесах, Вы диверсифицируете свои доходы а так же риски.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-10">
+                        <div class="faq-info__question">
+                          <h3>Начисление и распределение прибыли</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-10">
+                        <div class="faq-info__text">
+                          <p>Один раз в отчетный период, управляющая компания формирует финансовый отчет, который доступен в Личном Кабинете у каждого участнкиа конкретного проекта.<br>
+                            Доход от финансово-хозяйстенной деятельности каждого бизнеса распределяется между участниками, пропорционально купленым долям в бизнесе.<br>
+                            Доход начисляется один раз в отчетный период, ежемесячно или раз в квартал, в зависимости от модели, типа и категории бизнеса.<br>
+                            Доход от бизнесов будет начислять на баланс каждого пользователя и будет отображаться в личном кабинете.<br>
+                            Начисленные средства, при желании, можно использовать для покупки долей в проектах, либо вывести на персональный счет или банковскую карту.<br>
+                            <br>
+                            Пример расчета: Предположим что объект бизнеса стоит 10 000 000р и вы инвестируете 200 000 т.р., то в этом случае ваша доля в данном проекте составит 2%.<br>
+                            Следовательно, Ваш доход так же будет равен 2 % от чистой прибыли конкретного объекта. <br>
+                            К выплате будут доступны средства из расчета -10% за услуги управляющей компании, а так же расходов связанных с финансово-хозяйственной деятельностью самого бизнеса.<br></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-11">
+                        <div class="faq-info__question">
+                          <h3>Расчеты</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-11">
+                        <div class="faq-info__text">
+                          <p>В личном кабинете каждого пользователя, отображается его персональный баланс, который включает в себя совокупное количество средств находящихся на его персональном счету, включая совокупную стоимость долей и свободных средств, не задействованных в бизнесах.<br>
+
+                            Баланс отображается в цифровых Долларах  (USTD), и для удобства Русскоязычной аудитории в эквиваленте в Рублях.<br>
+                            Так же на площадке доступна внутренняя валюта MNP это валюта, которая является расчетным средством внутри системы. <br>
+                            1MNP= 1 USDT
+                            Операции пополнения баланса кошелька автоматически конвертируются в USDT<br>
+                            Расчеты пользователям в виде приема платежей и выплат, могут осуществляться на дебетовые и кредитные карты, в Рублях РФ или Долларах США.<br>
+                            Для покупки – продажи долей через внутреннюю биржу, осуществления операций внутри системы будет осуществлять за внутреннюю валюту MNP.<br>
+                            Все расчеты осуществляются в рублях с автоматической конвертацией в цифровой доллар USDT.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-12">
+                        <div class="faq-info__question">
+                          <h3>Вывод средств</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-12">
+                        <div class="faq-info__text">
+                          <p>Для того что бы получить выплату средств, нужно оставить заявку через Личный Кабинет пользователя. <br>
+                            Для этого у вас должен быть положительный баланс счета.<br>
+                            Средства будут списаны с баланса вашего счета в системе и поступят на вашу банковскую карту или счет, либо любым другим доступным методом в течении 5 рабочих банковских дней.<br>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="faq-info__item">
+                      <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-13">
+                        <div class="faq-info__question">
+                          <h3>Вывод средств</h3>
+                        </div>
+
+                        <div class="faq-info__icon">
+                          <svg width="18" height="10">
+                            <use href="img/sprite.svg#arrow-black"></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="faq-info__collapse" id="question-13">
+                        <div class="faq-info__text">
+                          <p>По каждому из бизнесов, в котором у вас куплены доли, управляющая компания один раз в отчетный период публикует финансовую отчетность.<br>
+                            Документ отражающий баланс о доходах или убытках конкретного бизнеса публикуется в личном кабинете каждого пользователя имеющего долю в бизнесе. <br>
+                            Публикуемые данные носят  информационный характер.<br>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
 
-      <div class="header__collapse" data-scroll-lock-scrollable>
-        <button class="header__close" type="button">
-          <svg width="32" height="32">
-            <use href="img/sprite.svg#cross-white"></use>
-          </svg>
-        </button>
+    </main>
 
-        <nav class="header__nav">
-          <ul class="header__menu  header__menu--collapse">
-            <li><a href="#promo">Monopoly life</a></li>
-            <li><a href="#project">Наши проекты</a></li>
-            <li><a href="#video">Как это работает?</a></li>
-            <li><a href="#faq">О площадке</a></li>
-            <li><a href="#features">Преимущества</a></li>
-            <li><a href="#why-project">Почему стоит поучаствовать?</a></li>
-          </ul>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__list">
+          <div class="footer__logo">
+            <picture>
+              <source srcset="img/logo_mono_2.svg" media="(max-width: 767px)">
+              <img src="img/logo_mono.svg" alt="">
+            </picture>
 
-          <div class="header__social">
+            <p class="footer__copy">© Monopoly Life 2020</p>
+          </div>
+
+          <div class="footer__doc">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Лицензионное соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+
+          <div class="footer__phone">
+            <ul>
+              <li><span>Телефон поддержки:</span><a href="tel:+79873434344">+7 (987) 34-34-344</a></li>
+              <li><span>Разместить проект:</span><a href="tel:+79873434344">+7 (987) 34-34-344</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__social">
             <p>Мы в социальных сетях:</p>
-  
-            <ul class="social">
+
+            <ul class="social  social--dark">
               <li>
                 <a href="#" target="_blank">
                   <svg width="11" height="24">
@@ -92,715 +1051,209 @@
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
 
-<main class="main">
-
-
-<section id="promo" class="scene  scene--large  promo">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="swiper-container  promo__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide  promo__slide">
-            <div class="promo__item">
-              <div class="promo__content">
-                <div class="promo__title">
-                  <h1>Общая концепция игры <span class="nowrap">Monopoly Life</span></h1>
-                </div>
-          
-                <div class="promo__text">
-                  <p>Площадка для реального бизнеса «Monopoly Life», предлагает каждому желающему, стать совладельцем действующего бизнеса и получать пассивный доход.</p>
-          
-                  <p>Для участия в игре не требуются специальные знания, ни опыта ведения бизнеса, ни больших вложений!</p>
-
-                  <p>Увеличь свой доход играючи!</p>
-                </div>
-              </div>
-  
-              <div class="promo__accent">
-                <div class="promo__frame  promo__frame--custom">
-                  <img src="img/a1.svg" alt="">
-                </div>
-              </div>
-            </div>
+          <div class="footer__address">
+            <p>Москва, Каширское шоссе, 3 <br> строение 2/9, офис 613</p>
+            <p>ОГРН 1107746618385</p>
+            <p>ИНН 7722724252</p>
           </div>
 
-          <div class="swiper-slide  promo__slide">
-            <div class="promo__item">
-              <div class="promo__content">
-                <div class="promo__title">
-                  <h2>Коллективные инвестиции с <span class="nowrap">Monopoly Life</span></h2>
-                </div>
-          
-                <div class="promo__text">
-                  <p>Принцип такого инвестирования позволяет уменьшить ваши риски, теперь для того что бы попробовать, не нужно выкупать бизнес целиком, достаточно купить минимальный кусочек. Такой подход, делает участия людей в бизнесе с небольшим капиталом доступным.</p>
-          
-                  <p>Для совсем мелких участников мы разработали формат игры, а для крупных инвесторов доступны варианты участия в проектах с юридическим оформлением через кооператив.</p>
-                </div>
-              </div>
-  
-              <div class="promo__accent">
-                <div class="promo__frame">
-                  <img src="img/a2.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide  promo__slide">
-            <div class="promo__item">
-              <div class="promo__content">
-                <div class="promo__title">
-                  <h2>Биржа <span class="nowrap">Monopoly Life</span></h2>
-                </div>
-          
-                <div class="promo__text">
-                  <p>Всё можно купить и продать! Как и любая другая биржа мы создаем ее для того, чтобы наши игроки и инвесторы могли продавать, покупать и обмениваться долями на внутреннем рынке площадки, что бы в конечном итоге заработать или выкупить понравившийся бизнес целиком.</p>
-          
-                  <p>Определяя стратегию торговли, Вы управляете стратегией в игре!</p>
-
-                  <p>Покупать или продавать – решать только Вам!</p>
-                </div>
-              </div>
-  
-              <div class="promo__accent">
-                <div class="promo__frame">
-                  <img src="img/a3.svg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="swiper-button-prev  promo__prev"></div>
-        <div class="swiper-button-next  promo__next"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="promo__scroll">
-    <span>Scroll</span>
-
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-</section>
-
-<section id="project" class="scene  scene--large  project">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="scene__title">
-        <h2>Наши проекты</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid grid--triple" id="loadContent">
-    
-  </div>
-
-  <div class="grid">
-    <div class="grid__item">
-      <div class="project__action">
-        <button onclick="window.open('https://app.monopolylife.ru/projects')" class="btn  btn--transparent">Все проекты</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="video" class="scene  scene--large  video">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="scene__title">
-        <h2>Как это работает?</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item">
-      <div class="video__frame">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/5IKPxffsmEo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="scene  scene--large  faq">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="faq__title">
-        <h2>О площадке</h2>
-      </div>
-
-      <div class="faq__subtitle">
-        <p>«Площадка для реального бизнеса «Monopoly Life», предлагает каждому желающему стать совладельцем действующего бизнеса и получать пассивный доход.</p>
-      </div>
-    </div>
-
-    <div class="grid__item">
-      <div class="faq__image">
-        <img src="img/pole.png" alt="">
-      </div>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item">
-      <div class="faq__content">
-        <p>За подробностями о том, как подбирается бизнес, как можно увеличить свой доход, что будет если приобрести золотую или платиновую фишку, вы можете найти <span class="link  js-modal-open" data-target="#modal-faq">здесь</span>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="features" class="scene  scene--large  features">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="scene__title  features__title">
-        <h2>Преимущества</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item  features__main">
-      <div class="swiper-container  features__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="features__content">
-              <div class="features__subtitle">
-                <p>для игрока</p>
-              </div>
-
-              <div class="features__promo">
-                <img src="img/Investor.svg" alt="">
-              </div>
-              
-              <div class="features__text">
-                <ul class="features__list">
-                  <li>
-                    <div class="features__image">
-                      <img src="img/features_1.svg" width="80" height="80" alt="">
-                    </div>
-
-                    <div class="features__desc">
-                      Пассивный доход, мобильность
-                    </div>
-                  </li>
-                  <li>
-                    <div class="features__image">
-                      <img src="img/features_2.svg" width="80" height="80" alt="">
-                    </div>
-
-                    <div class="features__desc">
-                      Возможность стать директором
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="swiper-slide  features__slide">
-            <div class="features__content">
-              <div class="features__subtitle">
-                <p>для выставившего бизнес на площадку</p>
-              </div>
-
-              <div class="features__promo">
-                <img src="img/Company.svg" alt="">
-              </div>
-              
-              <div class="features__text">
-                <ul class="features__list">
-                  <li>
-                    <div class="features__image">
-                      <img src="img/features_3.svg" width="80" height="80" alt="">
-                    </div>
-
-                    <div class="features__desc">
-                      Пассивный доход, мобильность
-                    </div>
-                  </li>
-                  <li>
-                    <div class="features__image">
-                      <img src="img/features_4.svg" width="80" height="80" alt="">
-                    </div>
-
-                    <div class="features__desc">
-                      Возможность стать директором
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="swiper-button-prev  features__prev  js-features-button"></div>
-        <div class="swiper-button-next  features__next  js-features-button"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="why-project" class="scene  scene--large  why-project">
-  <div class="grid">
-    <div class="grid__item">
-      <div class="scene__title">
-        <h2>Почему стоит поучаствовать в проекте?</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="grid__item">
-      <div class="why-project__steps">
-        <div class="why-project__pacman">
-          <img src="img/pacman.svg" width="418" height="430" alt="">
-        </div>
-
-        <div class="why-project__content">
-          <div class="swiper-container  why-project__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <ul class="why-project__coins  why-project__coins--first">
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="why-project__desc">
-                    <div class="round">
-                      <img src="img/coin.svg" alt="">
-                    </div>
-          
-                    <p class="round__text">Доступно <br> для каждого</p>
-                  </li>
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xl">
-                    <div class="round  round--small"></div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-slide">
-                <ul class="why-project__coins">
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xs">
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="why-project__desc">
-                    <div class="round">
-                      <img src="img/coin.svg" alt="">
-                    </div>
-          
-                    <p class="round__text">Безграничный рост прибыли</p>
-                  </li>
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xl">
-                    <div class="round  round--small"></div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-slide">
-                <ul class="why-project__coins">
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xs">
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="why-project__desc">
-                    <div class="round">
-                      <img src="img/coin.svg" alt="">
-                    </div>
-          
-                    <p class="round__text">Пассивный <br> доход</p>
-                  </li>
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xl">
-                    <div class="round  round--small"></div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-slide">
-                <ul class="why-project__coins">
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xs">
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="why-project__desc">
-                    <div class="round">
-                      <img src="img/coin.svg" alt="">
-                    </div>
-          
-                    <p class="round__text">Не требует <br> специальных <br> знаний</p>
-                  </li>
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xl">
-                    <div class="round  round--small"></div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-slide">
-                <ul class="why-project__coins">
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xs">
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="why-project__desc">
-                    <div class="round">
-                      <img src="img/coin.svg" alt="">
-                    </div>
-          
-                    <p class="round__text">Возможность <br> стать владельцем <br> бизнеса</p>
-                  </li>
-                  <li>
-                    <div class="round  round--small"></div>
-                  </li>
-                  <li class="hidden-xl">
-                    <div class="round  round--small"></div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="swiper-slide  js-target-slider"></div>
-
-              <div class="swiper-slide"></div>
-            </div>
-          
-            <div class="swiper-button-next  why-project__next"></div>
+          <div class="footer__desc">
+            <p>Все материалы, представленные на данном Сайте, носят исключительно ознакомительный характер, они не
+              являются предложением
+              или советом по покупке либо продаже долей компаний в любом виде и не должны рассматриваться как
+              рекомендации к подобного
+              рода действиям. Компания не предоставляет Пользователю советов и/или рекомендаций по заключению сделок, и
+              во всех случаях
+              Пользователь по своему единоличному усмотрению, на свой страх и риск, принимает решение о заключении
+              сделок.</p>
           </div>
         </div>
       </div>
+    </footer>
+
+    <div class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#promo"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#project"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#video"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#faq"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#features"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#why-project"></a>
+        </li>
+      </ul>
     </div>
-  </div>
 
-  <div class="grid">
-    <div class="grid__item">
-      <div class="project__action">
-        <button class="btn  js-modal-open" onclick="passRouter('https://app.monopolylife.ru/')">Теперь я готов играть</button>
-      </div>
-    </div>
-  </div>
-</section>
+    <div id="modal-form" class="modal  modal--full" data-scroll-lock-scrollable>
+      <div class="modal__overlay"></div>
 
-<div id="modal-faq" class="modal  modal--full" data-scroll-lock-scrollable>
-  <div class="modal__overlay"></div>
-
-  <div class="modal__window">
-    <div class="modal__close">
-      <button class="js-modal-close" aria-label="Закрыть" type="button">
-        <svg width="32" height="32">
-          <use href="img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-    </div>
-
-    <div class="modal__content">
-      <section class="scene  faq-info">
-        
-        <div class="grid">
-          <div class="grid__item">
-            <div class="faq-info__title">
-              <h2>Ответы на вопросы</h2>
-            </div>
-          </div>
+      <div class="modal__window">
+        <div class="modal__close">
+          <button class="js-modal-close" aria-label="Закрыть" type="button">
+            <svg width="32" height="32">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+          </button>
         </div>
-        <div class="grid  faq-info__main" id="loadFaq">
 
+        <div class="modal__content">
+          <section class="scene  registration">
+            <div class="grid  registration__list">
+              <div class="grid__item">
+                <div class="registration__title">
+                  <h2>Скоро запуск!</h2>
+                </div>
+
+                <div class="registration__subtitle">
+                  <p>А сейчас время подарков! Заполни форму, что бы не пропустить СТАРТ и получить приятный бонус! </p>
+                </div>
+              </div>
+
+              <div class="grid__item">
+                <form class="form">
+                  <div class="form__item">
+                    <div class="form__row">
+                      <div class="form__control">
+                        <input class="form__input" type="text" name="name" placeholder="Ф.И.О." required>
+                      </div>
+                    </div>
+
+                    <div class="form__row">
+                      <div class="form__control">
+                        <input class="form__input input-phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                      </div>
+
+                      <div class="form__control">
+                        <input class="form__input" type="email" name="email" placeholder="e-mail" required>
+                      </div>
+                    </div>
+
+                    <div class="form__row">
+                      <div class="form__control">
+                        <p>Приоритетный для Вас способ оповещения:</p>
+                      </div>
+
+                      <div class="form__control">
+                        <input type="radio" name="connection">
+                        <span>телефон</span>
+                      </div>
+
+                      <div class="form__control">
+                        <input type="radio" name="connection">
+                        <span>e-mail</span>
+                      </div>
+                    </div>
+
+                    <div class="form__row">
+                      <div class="form__control">
+                        <textarea class="form__textarea" placeholder="Комментарий" rows="5"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form__row  form__row--action">
+                      <div class="form__control" style="text-align: center;">
+                        <button class="btn  js-modal-open" data-target="#modal-submit" type="button">Отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-    </div>
-  </div>
-</div>
-
-</main>
-
-<footer class="footer">
-  <div class="footer__wrap">
-    <div class="footer__list">
-      <div class="footer__logo">
-        <picture>
-          <source srcset="img/logo_mono_2.svg" media="(max-width: 767px)">
-          <img src="img/logo_mono.svg" alt="">
-        </picture>
-  
-        <p class="footer__copy">© Monopoly Life 2020</p>
-      </div>
-  
-      <div class="footer__doc">
-        <a href="#">Пользовательское соглашение</a>
-        <a href="#">Лицензионное соглашение</a>
-        <a href="#">Политика конфиденциальности</a>
-      </div>
-  
-      <div class="footer__phone">
-        <ul>
-          <li><span>Телефон поддержки:</span><a href="tel:+79873434344">+7 (987) 34-34-344</a></li>
-          <li><span>Разместить проект:</span><a href="tel:+79873434344">+7 (987) 34-34-344</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer__social">
-        <p>Мы в социальных сетях:</p>
-  
-        <ul class="social  social--dark">
-          <li>
-            <a href="#" target="_blank">
-              <svg width="11" height="24">
-                <use href="img/sprite.svg#fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/MonopolyLife_RUS" target="_blank">
-              <svg width="28" height="24">
-                <use href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/monopolylife.ru?utm_medium=copy_link" target="_blank">
-              <svg width="24" height="24">
-                <use href="img/sprite.svg#inst"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UC-9c_nnHDZAflOquOjiGcKw" target="_blank">
-              <svg width="34" height="24">
-                <use href="img/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="footer__address">
-        <p>Москва, Каширское шоссе, 3 <br> строение 2/9, офис 613</p>
-        <p>ОГРН 1107746618385</p>
-        <p>ИНН 7722724252</p>
-      </div>
-  
-      <div class="footer__desc">
-        <p>Все материалы, представленные на данном Сайте, носят исключительно ознакомительный характер, они не являются предложением 
-          или советом по покупке либо продаже долей компаний в любом виде и не должны рассматриваться как рекомендации к подобного 
-          рода действиям. Компания не предоставляет Пользователю советов и/или рекомендаций по заключению сделок, и во всех случаях  
-          Пользователь по своему единоличному усмотрению, на свой страх и риск, принимает решение о заключении сделок.</p>
       </div>
     </div>
-  </div>
-</footer>
 
-<div class="navigation">
-  <ul class="navigation__list">
-    <li class="navigation__item">
-      <a class="navigation__link" href="#promo"></a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="#project"></a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="#video"></a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="#faq"></a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="#features"></a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__link" href="#why-project"></a>
-    </li>
-  </ul>
-</div>
+    <div id="modal-submit" class="modal  modal--full" data-scroll-lock-scrollable>
+      <div class="modal__overlay"></div>
 
-<div id="modal-form" class="modal  modal--full" data-scroll-lock-scrollable>
-  <div class="modal__overlay"></div>
-
-  <div class="modal__window">
-    <div class="modal__close">
-      <button class="js-modal-close" aria-label="Закрыть" type="button">
-        <svg width="32" height="32">
-          <use href="img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-    </div>
-
-    <div class="modal__content">
-      <section class="scene  registration">
-        <div class="grid  registration__list">
-          <div class="grid__item">
-            <div class="registration__title">
-              <h2>Скоро запуск!</h2>
-            </div>
-
-            <div class="registration__subtitle">
-              <p>А сейчас время подарков! Заполни форму, что бы не пропустить СТАРТ и получить приятный бонус! </p>
-            </div>
-          </div>
-
-          <div class="grid__item">
-            <form class="form">
-              <div class="form__item">
-                <div class="form__row">
-                  <div class="form__control">
-                    <input class="form__input" type="text" name="name" placeholder="Ф.И.О." required>
-                  </div>
-                </div>
-
-                <div class="form__row">
-                  <div class="form__control">
-                    <input class="form__input input-phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
-                  </div>
-      
-                  <div class="form__control">
-                    <input class="form__input" type="email" name="email" placeholder="e-mail" required>
-                  </div>
-                </div>
-
-                <div class="form__row">
-                  <div class="form__control">
-                    <p>Приоритетный для Вас способ оповещения:</p>
-                  </div>
-
-                  <div class="form__control">
-                    <input type="radio" name="connection">
-                    <span>телефон</span>
-                  </div>
-
-                  <div class="form__control">
-                    <input type="radio" name="connection">
-                    <span>e-mail</span>
-                  </div>
-                </div>
-      
-                <div class="form__row">
-                  <div class="form__control">
-                    <textarea class="form__textarea" placeholder="Комментарий" rows="5"></textarea>
-                  </div>
-                </div>
-      
-                <div class="form__row  form__row--action">
-                  <div class="form__control" style="text-align: center;">
-                    <button class="btn  js-modal-open"  data-target="#modal-submit" type="button">Отправить</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+      <div class="modal__window">
+        <div class="modal__close">
+          <button class="js-modal-close" aria-label="Закрыть" type="button">
+            <svg width="32" height="32">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+          </button>
         </div>
-      </section>
-    </div>
-  </div>
-</div>
 
-<div id="modal-submit" class="modal  modal--full" data-scroll-lock-scrollable>
-  <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <section class="scene  success">
+            <div class="grid  success__list">
+              <div class="grid__item">
+                <div class="success__title">
+                  <h2>Ура!</h2>
+                </div>
 
-  <div class="modal__window">
-    <div class="modal__close">
-      <button class="js-modal-close" aria-label="Закрыть" type="button">
-        <svg width="32" height="32">
-          <use href="img/sprite.svg#cross"></use>
-        </svg>
-      </button>
-    </div>
-
-    <div class="modal__content">
-      <section class="scene  success">
-        <div class="grid  success__list">
-          <div class="grid__item">
-            <div class="success__title">
-              <h2>Ура!</h2>
-            </div>
-
-            <div class="success__subtitle">
-              <p>Мы благодарим вас за регистрацию и интерес к нашему проекту!</p>
-            </div>
-          </div>
-
-          <div class="grid__item">
-            <div class="success__main">
-              <div class="success__image">
-                <img src="img/coin.svg" alt="">
+                <div class="success__subtitle">
+                  <p>Мы благодарим вас за регистрацию и интерес к нашему проекту!</p>
+                </div>
               </div>
 
-              <div class="success__desc">
-                <p>Ваш бонус - 5000 монет</p>
+              <div class="grid__item">
+                <div class="success__main">
+                  <div class="success__image">
+                    <img src="img/coin.svg" alt="">
+                  </div>
 
-                <p>1 монета = 1 рубль</p>
-              </div>
+                  <div class="success__desc">
+                    <p>Ваш бонус - 5000 монет</p>
 
-              <div class="success__text">
-                <p>Они будут начислены вам в личном кабинете пользователя, после запуска проекта</p>
-              </div>
+                    <p>1 монета = 1 рубль</p>
+                  </div>
 
-              <div class="success__social">
-                <p>Оставайтесь с нами в социальных сетях:</p>
+                  <div class="success__text">
+                    <p>Они будут начислены вам в личном кабинете пользователя, после запуска проекта</p>
+                  </div>
 
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <img src="img/fb_icon.svg" width="11" height="24" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/telegram_icon.svg" width="24" height="24" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/inst_icon.svg" width="24" height="24" alt="">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="img/ytb_icon.svg" width="34" height="24" alt="">
-                    </a>
-                  </li>
-                </ul>
+                  <div class="success__social">
+                    <p>Оставайтесь с нами в социальных сетях:</p>
+
+                    <ul class="social">
+                      <li>
+                        <a href="#">
+                          <img src="img/fb_icon.svg" width="11" height="24" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/telegram_icon.svg" width="24" height="24" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/inst_icon.svg" width="24" height="24" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/ytb_icon.svg" width="34" height="24" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
-  </div>
-</div>
 
-    </div>
-    <script src="libs.min.js"></script>
-    <script src="index.min.js"></script>
-    <script src="queries.js"></script>
-  </body>
+  </div>
+  <script src="libs.min.js"></script>
+  <script src="index.min.js"></script>
+  <script src="queries.js"></script>
+</body>
+
 </html>
-

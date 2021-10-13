@@ -126,8 +126,8 @@ getState = async () => {
 
 getFAQ = async () => {
     _tpl = (params) => {
-        return `<div class="faq-info__item">
-        <div class="faq-info__toggle  js-collapse-faq-toggle" data-target-faq="#question-${params.id}">
+        return `<div class="faq-info__item" >
+        <div class="faq-info__toggle js-collapse-faq-toggle" data-target-faq="#question-${params.id}">
           <div class="faq-info__question">
             <h3>${params.title}</h3>
           </div>
@@ -177,6 +177,5 @@ getFAQ = async () => {
 }
 
 (getState)();
-(getFAQ)();
-
+// (getFAQ)();
 

@@ -1,21 +1,71 @@
 [{
     "id": 0,
-    "title": "Что такое MonopolyLife?",
-    "describe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non!"
+    "title": "Миссия проекта",
+    "describe": "Kek"
   },
   {
     "id": 1,
-    "title": "Что такое MonopolyLife?",
-    "describe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non!"
+    "title": "Суть проекта Monopoly Life",
+    "describe": ""
   },
   {
     "id": 2,
-    "title": "Что такое MonopolyLife?",
-    "describe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non!"
+    "title": "Выбор объектов",
+    "describe": ""
   },
   {
     "id": 3,
-    "title": "Что такое MonopolyLife?",
-    "describe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus expedita tenetur in impedit provident excepturi. Cumque sunt cum perferendis? Dignissimos veritatis corrupti labore quia, neque asperiores voluptate quis non!"
+    "title": "Как стать участником",
+    "describe": ""
+  },
+  {
+    "id": 4,
+    "title": "Покупка доли",
+    "describe": ""
+  },
+  {
+    "id": 5,
+    "title": "С какой суммы начать?",
+    "describe": ""
+  },
+  {
+    "id": 6,
+    "title": "Раунды",
+    "describe": ""
+  },
+  {
+    "id": 7,
+    "title": "Доходность",
+    "describe": ""
+  },
+  {
+    "id": 8,
+    "title": "Гарантии и риски",
+    "describe": ""
+  },
+  {
+    "id": 9,
+    "title": "Как оформляется",
+    "describe": ""
+  },
+  {
+    "id": 10,
+    "title": "Начисление и распределение прибыли",
+    "describe": ""
+  },
+  {
+    "id": 11,
+    "title": "Расчеты",
+    "describe": ""
+  },
+  {
+    "id": 12,
+    "title": "Вывод средств",
+    "describe": ""
+  },
+  {
+    "id": 13,
+    "title": "Отчетность",
+    "describe": ""
   }
 ]
