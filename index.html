@@ -40,7 +40,7 @@
 
               <li>
                 <button class="btn  btn--yellow  js-modal-open" type="button"
-                  onclick="passRouter('https://app.monopolylife.ru/')">Играть</button>
+                data-target="#modal-form">Играть</button>
               </li>
             </ul>
           </div>
@@ -658,7 +658,7 @@
         <div class="grid">
           <div class="grid__item">
             <div class="project__action">
-              <button class="btn  js-modal-open" onclick="passRouter('https://app.monopolylife.ru/')">Теперь я готов
+              <button class="btn  js-modal-open" data-target="#modal-form">Теперь я готов
                 играть</button>
             </div>
           </div>
@@ -1261,17 +1261,17 @@
                   <div class="form__item">
                     <div class="form__row">
                       <div class="form__control">
-                        <input class="form__input" type="text" name="name" placeholder="Ф.И.О." required>
+                        <input class="form__input" id="form-name"  type="text" name="name" placeholder="Ф.И.О." required>
                       </div>
                     </div>
 
                     <div class="form__row">
                       <div class="form__control">
-                        <input class="form__input input-phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                        <input class="form__input input-phone" id="form-phone"  name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
                       </div>
 
                       <div class="form__control">
-                        <input class="form__input" type="email" name="email" placeholder="e-mail" required>
+                        <input class="form__input" id="form-email"  type="email" name="email" placeholder="e-mail" required>
                       </div>
                     </div>
 
@@ -1281,25 +1281,25 @@
                       </div>
 
                       <div class="form__control">
-                        <input type="radio" name="connection">
+                        <input onclick="radioSelect('phone')" id="form-radio-phone"  type="radio" name="connection">
                         <span>телефон</span>
                       </div>
 
                       <div class="form__control">
-                        <input type="radio" name="connection">
+                        <input onclick="radioSelect('email')" id="form-radio-email" type="radio" name="connection">
                         <span>e-mail</span>
                       </div>
                     </div>
 
                     <div class="form__row">
                       <div class="form__control">
-                        <textarea class="form__textarea" placeholder="Комментарий" rows="5"></textarea>
+                        <textarea  id="form-comment" class="form__textarea" placeholder="Комментарий" rows="5"></textarea>
                       </div>
                     </div>
 
                     <div class="form__row  form__row--action">
                       <div class="form__control" style="text-align: center;">
-                        <button class="btn  js-modal-open" data-target="#modal-submit" type="button">Отправить</button>
+                        <button class="btn  js-modal-open" onclick="getFromFields()" data-target="#modal-submit" type="button">Отправить</button>
                       </div>
                     </div>
                   </div>
@@ -1387,9 +1387,11 @@
     </div>
 
   </div>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
   <script src="libs.min.js"></script>
   <script src="index.min.js"></script>
   <script src="queries.js"></script>
+  <script src="modules/lead.module.js"></script>
 </body>
 
 </html>
