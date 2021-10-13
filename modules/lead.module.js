@@ -1,5 +1,5 @@
 let selected = ''
-const BASE = "hhttps://monopolylife.ru/api"
+const BASE = "https://monopolylife.ru/api"
 
 
 async function getFromFields() {
